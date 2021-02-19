@@ -38,7 +38,7 @@
   }
 }
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 480px) {
   .abt-p-cont {
     background-color: darkgray;
   }
@@ -64,9 +64,7 @@
     color: orange;
     float: right;
   }
-  .on-nav {
-    display: none;
-  }
+
   .sidebar {
     padding-top: 15px;
   }
@@ -81,8 +79,14 @@
   footer {
     position: fixed;
   }
+  .on-nav {
+    display: none;
+  }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .on-nav {
+    display: none;
+  }
   .abt-section {
     height: 150vh;
   }
@@ -117,9 +121,7 @@
   .openbtn {
     color: red;
   }
-  .on-nav {
-    display: none;
-  }
+
   .sidebar a:hover {
     font-size: 15px;
     color: #190061;
@@ -210,11 +212,11 @@
   }
 }
 @media (max-width: 800px) {
-  .on-nav {
-    display: none;
-  }
   .skill-abt-cont {
     margin-top: 15vh;
+  }
+  .on-nav {
+    display: none;
   }
 }
 
@@ -326,7 +328,7 @@
     width: 90%;
   }
 }
-@media (max-width: 500px) {
+@media (min-width: 500px) {
   /*.skill-abt-cont {
     margin-top: 15vh;
   }*/
