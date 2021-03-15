@@ -234,6 +234,9 @@ z-index: 1;
   box-sizing: border-box;
 }
 
+footer {
+  background-color: #14213d;
+}
 .footer-heading {
   display: flex;
   flex-direction: column;
@@ -249,7 +252,7 @@ z-index: 1;
   margin-bottom: 0.5rem;
 }
 .footer-heading a:hover {
-  color: red;
+  color: #798c98;
   transition: 0.3s ease-out;
 }
 
