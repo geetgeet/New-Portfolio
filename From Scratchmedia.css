@@ -1,4 +1,4 @@
-/*---Responsive------*/
+/* ---Responsive------
 @media (max-width: 768px) {
   .on-nav {
     display: none;
@@ -6,7 +6,7 @@
   /*section {
     height: 120vh;
   }*/
-  .sidebar a:hover {
+/* .sidebar a:hover {
     font-size: 35px;
     color: #190061;
     transition: 0.1s ease-out;
@@ -36,19 +36,19 @@
     margin-top: 16px;
     line-height: 20px;
   }
-}
+} */
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
   .abt-p-cont {
     background-color: darkgray;
-  }
-  /*.skill-abt-cont {
+  } */
+/*.skill-abt-cont {
     margin-top: 80vh;
   }*/
-  /* .abt-section {
+/* .abt-section {
     height: 150vh;
   }*/
-  .work_examples {
+/* .work_examples {
     display: flex;
     flex-direction: column;
   }
@@ -82,8 +82,8 @@
   .on-nav {
     display: none;
   }
-}
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+} */
+/* @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .on-nav {
     display: none;
   }
@@ -93,10 +93,9 @@
   /*.abt-text {
     background-color: blue;
   }*/
-  .abt-cont {
+/* .abt-cont {
     top: 0px;
     flex-direction: column;
-    /*width: 90%;*/
     height: auto;
     padding: 30px 0px;
     align-items: center;
@@ -126,10 +125,9 @@
     font-size: 15px;
     color: #190061;
     transition: 0.1s ease-out;
-  }
-
-  /* Styles */
-}
+  } */
+/* } */
+/* Styles */
 
 /*------responsive--------->*/
 @media (min-width: 1000px) {
@@ -207,7 +205,7 @@
   }
 }
 @media (max-width: 900px) {
-  .on-nav {
+  .navbar {
     display: none;
   }
 }
@@ -326,6 +324,13 @@
   }
   footer p:nth-child(2) {
     width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navbar li {
+    float: none;
+    display: block;
   }
 }
 @media (min-width: 500px) {
