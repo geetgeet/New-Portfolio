@@ -321,7 +321,7 @@ section {
   height: 100vh;
 }
 .section_top {
-  background-image: url("nasa-Q1p7bh3SHj8-unsplash.jpg");
+  background-image: url("./assets/images/nasa-Q1p7bh3SHj8-unsplash.jpg");
   background-size: cover;
   background-repeat: repeat-y;
   position: relative;
