@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Home</title>
-    <link href="From Scratch.css" rel="stylesheet">
-    <link href="From Scratchmedia.css" rel="stylesheet">
-
+    <link href="From_Scratch.css" rel="stylesheet">
+    <link href="From_Scratchmedia.css" rel="stylesheet">
+    <link rel="stylesheet" href="about.css">
     
 </head>
 <script>
@@ -31,641 +31,130 @@
   
   
   </style>
-  <style>
-
-      #inner{
-          display: flex;
-      }
-      .on-nav{
-          float: right;
-          display: flex;
-      }
-     #header .inner  ul li a {
-    font-family: calibri;
-    font-size: 1.4em;
-    text-transform: uppercase;
-    color: #147abe;
+<style>
+#inner{
+  display: flex;
+}
+.on-nav{ 
+  float: right;
+  display: flex;
+}
+#header .inner  ul li a {
+  font-family: calibri;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  color: #147abe;
 
 }
-      .on-nav li{
-        list-style: none;
-        padding: 30px;
-
-    color: #fff;
-
-      }
-      .sidebar a :hover{
-          color:lawngreen
-      }
-  .work-btn:hover{
-      scale: 1.2;
-    
-  }
-  </style>
+.on-nav li{
+  list-style: none;
+  padding: 30px;
+  color: #fff;
+}
+.sidebar a :hover{
+  color:lawngreen
+}
+.work-btn:hover{
+  scale: 1.2;
+}
+</style>
 <body>
-    <section class="section_top">
-        
-     
-          
+  <section class="section_top">
     <header id="header">
-        
       <div class="inner">
-                  <a href="#" class="logo"><img class="logo" src="./assets/images/clogo.png" alt="logo"></a>        
- <button class="openbtn" onclick=openNav()>&#10020; Open</button>
-
- <div id="side_nav" class="sidebar">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+        <a href="#" class="logo"><img class="logo" src="./assets/images/clogo.png" alt="logo"></a>        
+        <button class="openbtn" onclick=openNav()>&#10020; Open</button>
+        <div id="side_nav" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
               &#x2770;</a>
             <a href="index.html">Home</a>
             <a href="scratch_work.html">Work</a>
             <a href="About.html">About</a>
             <a href="Contact.html">Contact</a>
-            </div> 
-              
-            <style>
-              body {height: 200vh;
-                font-family: Arial, Helvetica, sans-serif;}
-              
-              .navbar {
-             
-                overflow: auto;
-              }
-              
-              .navbar a {
-                float: left;
-                padding: 12px;
-                color: white;
-                text-decoration: none;
-                font-size: 17px;
-              }
-              
-              .navbar a:hover {
-                background-color: #000;
-              }
-              .inner{
-                display: flex;
-              }
-              
-             
-              @media screen and (max-width: 500px) {
-                .navbar li {
-                  float: none;
-                  display: block;
-                }
-              }
-              </style>
-              <body>
-              
-              
-              <div class="navbar">    
-<ul class="on-nav">
-   <li><a href="index.html">Home</a></li> 
-   <li><a href="scratch_work.html">Work</a></li>
-   <li> <a href="About.html">About </a></li>
-   <li><a href="Contact.html">Contact</a></li> 
+        </div> 
 
-</ul>
-               </div>  
-    <div class="text-container">
-                <p>Hello,</p>
-                <p>About Gabe</p>
+        <div class="navbar">    
+          <ul class="on-nav">
+            <li><a href="index.html">Home</a></li> 
+            <li><a href="scratch_work.html">Work</a></li>
+            <li> <a href="About.html">About </a></li>
+            <li><a href="Contact.html">Contact</a></li> 
+          </ul>
+        </div>  
+
+        <div class="text-container">
+          <p>Hello,</p>
+          <p>About Gabe</p>
           <p>Junior developer <br>-in training</p>
-          <a   href="scratch_work.html" ><button class="work-btn" id="abt-a" onclick=load_work()>My Work</button></a>
-    
+          <a href="scratch_work.html" >
+            <button class="work-btn" id="abt-a" onclick=load_work()>My Work</button>
+          </a>
+        </div>
 
-            </section>
-           
-        
+      </div>
+    </header>
+  </section>
+  <main>
+    <section id="abt-sec"  class="abt-section">
+      <div class="content">
+        <div class="abt-p-cont">
+          <div class="abt-me-card">
+            <img src="./assets/images/Gabriel Moses (4).JPG">
+          </div>  
+          <h1 class="abt_head" id='lbl_headings'>About me</h1> 
+          <hr> 
+            <div class="abt-text">      
+              <div class='passion'>      
+                <h1 class='abt_head'>Where did your passion for tech come from:</h1>
+                  <p>I have always been curious about how things work. 
+                    While volunteering at Church, I assisted with IT and media for services. 
+                    While troubleshooting technical issues I found that I loved tech however my passion for programming/coding came as a surprise.
+                    This was something I was only able to explore when I started at the Bootcamp at Life choices.
+                  </p>
+              </div>
+
+              <div class='hobbies'>
+                <h1><strong>Hobbies:</strong></h1>
+                  <p>I always enjoy learning new things,</p>
+                  <p>My Hobbies include<br>
+                    <ul style="list-style-type:none;">
+                      <li>Reading</li>
+                      <li>Mobile gaming/ PC gaming</li>
+                      <li>Photography</li>
+                      <li>Gardening</li>
+                      <li>Music</li>
+                      <!-- <li>Philosophical Studies</li> -->
+                      <li>Coding</li>
+                    </ul>
+                  </p>
+              </div>
             </div>
+          </div>
+    </section>
 
-       
-         
-
-      </header>
-      <main>
-        <section id="abt-sec"  class="abt-section">
-          <div class="content">
-       
-            <div class="abt-p-cont">
-                
-              <div class="abt-me-card">
-                  <img src="./assets/images/Gabriel Moses (4).JPG">
-                  </div>  
-                  <h1 class="abt_head" id='lbl_headings'>About me</h1> 
-                      <hr> 
-  <div class="abt-text">
-
-                       
-               
-                 
-                  
-                  <div class='passion'>      <h1 class='abt_head'>Where did your passion for tech come from:</h1>
-  <p>I have always been curious about how things work. 
-  While volunteering at Church, I assisted with IT and media for services. 
-  While troubleshooting technical issues I found that I loved tech however my passion for programming/coding came as a surprise.
-   This was something I was only able to explore when I started at the Bootcamp at Life choices.</p>
-   </div>
-  <div class='hobbies'>
-     <h1><strong>Hobbies:</strong></h1>
-   <p>I always enjoy learning new things,</p>
-  <p>My Hobbies include<br>
-  <ul style="list-style-type:none;">
-    <li>Reading</li>
-     <li>Mobile gaming/ PC gaming</li>
-     <li>Photography</li>
-    <li>Gardening</li>
-     <li>Music</li>
-     <!-- <li>Philosophical Studies</li> -->
-     <li>Coding</li>
-  </ul></p></div>
+    <footer id="main-footer">
+      <div class="container">   
+        <div class="footer-heading 1">
+          <h2>Contact me</h2>   
+          <h2> Email:gmoses728@gmail.com</h2>    
+          <a href="#">Linkdin</a><a href="#" class="fa fa-linkedin" target='blank'></a>
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+        </div>
+          <div class="footer-heading 2">
+          <!-- <h2>Social Media</h2>
+          <a href="https://www.instagram.com/gabe_basie/"  target='blank'>
+            <i class="fa fa-instagram" style="font-size:36px"></i>
+              Instagram</a>
+          <a href="#"></a>
+          <a href="#"></a> -->
+          <div class="bottom">
+            <h2>Lets get in touch</h2>
+          </div> 
+        </div>
+      </div>
+    </footer>
   
-  
-              </div></div>
-              </section>
-              <footer id="main-footer">
-                <div class="container">
-              
-                <div class="footer-heading 1">
-                <h2>Contact me</h2>   
-                <h2> Email:gmoses728@gmail.com</h2>                      
-                <a href="#">Linkdin</a><a href="#" class="fa fa-linkedin" target='blank'></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                
-                </div>
-                <div class="footer-heading 2">
-                <h2>Social Media</h2>
-                <a href="https://www.instagram.com/gabe_basie/"  target='blank'><i class="fa fa-instagram" style="font-size:36px"></i>
-                    Instagram</a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <div class="bottom">
-                    <h2>Lets get in touch</h2>
-                    </div> 
-                
-                </footer>
-      
-        <style>
-         .abt-section{
-           display:table-footer-group;
-         } 
-          .abt-text{
-            display: flex;
-          }
-      .container_card {
-        position: relative;
-        width: 50%;
-      }
-
-      .image {
-        display: block;
-        width: 100%;
-        height: auto;
-      }
-
-      .overlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        opacity: 0;
-        transition: 0.5s ease;
-        background-color: #798C98;
-      }
-
-      .container_card:hover .overlay {
-        opacity: 0.9;
-      }
-
-      .text-card {
-        color: white;
-        font-size: 20px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        text-align: center;
-      }
-      .card-center{
-        display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;    }
-      .container_card{
-        justify-content: center;
-        margin: 1vh 0vh 1vh 0vh;
-      }
-    </style>
-
-<style>
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-   padding: 5px;
-  }
-  
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }</style>
- 
-        <style>
-          
-          .abt-text{
-            display: flex;
-          }
-      .container_card {
-        position: relative;
-        width: 50%;
-      }
-
-      .image {
-        display: block;
-        width: 100%;
-        height: auto;
-      }
-
-      .overlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        opacity: 0;
-        transition: 0.5s ease;
-        background-color: #798C98;
-      }
-
-      .container_card:hover .overlay {
-        opacity: 0.9;
-      }
-
-      .text-card {
-        color: white;
-        font-size: 20px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        text-align: center;
-      }
-      .card-center{
-        display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;    }
-      .container_card{
-        justify-content: center;
-        margin: 1vh 0vh 1vh 0vh;
-      }
-    </style>
- 
-
-
-<style>
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-   padding: 5px;
-  }
-  
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-  
-  .container {
-    padding: 2px 16px;
-  }
-  </style>
- <style>
-      .container_lotto {
-        position: relative;
-        width: 50%;
-      }
-
-      .image {
-        display: block;
-        width: 100%;
-        height: auto;
-      }
-
-      .overlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        opacity: 0;
-        transition: 0.5s ease;
-        background-color: #5915a7;
-      }
-
-      .container_lotto:hover .overlay {
-        opacity: 0.9;
-        cursor: pointer;
-      }
-
-      .text-lotto {
-        color: white;
-        font-size: 20px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        text-align: center;
-      }
- </style>
-
-</div>
-        <style>
-
-         
-            
-          
-          .skills_container {
-          width: 100%;
-          background-color: #ddd;
-        }
-        
-        .skills {
-          text-align: right;
-          padding-top: 10px;
-          padding-bottom: 10px;
-          color: white;
-        }
-        .python {width: 85%; background-color: #808080;}
-        
-        .html {width: 80%; background-color: #4CAF50;}
-        .css {width: 70%; background-color: #2196F3;}
-        .js {width: 60%; background-color: #f44336;}
-          .container{
-            text-align: center;
-          }
-        </style>
-      
-          </article>
-      <!---------Testemonials----------------->
-      <style>
-        @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
-@import  url(https://fonts.googleapis.com/css?family=Raleway:400,800);
-figure.snip1192 {
-  font-family: 'Raleway', Arial, sans-serif;
-  position: relative;
-  float: left;
-  overflow: hidden;
-  margin: 10px 1%;
-  min-width: 220px;
-  max-width: 310px;
-  width: 100%;
-  color: #333;
-  text-align: left;
-  box-shadow: none ;
-}
-figure.snip1192 * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-figure.snip1192 img {
-  max-width: 100%;
-  height: 120px;
-  width: 120px;
-  border-radius: 50%;
-  margin-bottom: 15px;
-  display: inline-block;
-  z-index: 1;
-  position: relative;
-}
-figure.snip1192 blockquote {
-  margin: 0;
-  display: block;
-  border-radius: 8px;
-  position: relative;
-  background-color: #fafafa;
-  padding: 30px 50px 65px 50px;
-  font-size: 0.8em;
-  font-weight: 500;
-  margin: 0 0 -50px;
-  line-height: 1.6em;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-  font-size: medium;
-}
-figure.snip1192 blockquote:before,
-figure.snip1192 blockquote:after {
-  font-family: 'FontAwesome';
-  content: "\201C";
-  position: absolute;
-  font-size: 50px;
-  opacity: 0.3;
-  font-style: normal;
-}
-figure.snip1192 blockquote:before {
-  top: 35px;
-  left: 20px;
-}
-figure.snip1192 blockquote:after {
-  content: "\201D";
-  right: 20px;
-  bottom: 35px;
-}
-figure.snip1192 .author {
-  margin: 0;
-  text-transform: uppercase;
-  text-align: center;
-  color: #ffffff;
-}
-figure.snip1192 .author h5 {
-  opacity: 0.8;
-  margin: 0;
-  font-weight: 800;
-}
-figure.snip1192 .author h5 span {
-  font-weight: 400;
-  text-transform: none;
-  display: block;
-}
-
-</style>
-      
-<style>
- .container {
-    padding: 2px 16px;
-  }
-</style>
- 
- <style>
-      .container_lotto {
-        position: relative;
-        width: 50%;
-      }
-
-      .image {
-        display: block;
-        width: 100%;
-        height: auto;
-      }
-
-      .overlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        opacity: 0;
-        transition: 0.5s ease;
-        background-color: #5915a7;
-      }
-
-      .container_lotto:hover .overlay {
-        opacity: 0.9;
-        cursor: pointer;
-      }
-
-      .text-lotto {
-        color: white;
-        font-size: 20px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        text-align: center;
-      }
- </style>
-
-</div>
-        <style>
-          .skills_container {
-          width: 100%;
-          background-color: #ddd;
-        }
-        
-        .skills {
-          text-align: right;
-          padding-top: 10px;
-          padding-bottom: 10px;
-          color: white;
-        }
-        .python {width: 85%; background-color: #808080;}
-        
-        .html {width: 80%; background-color: #4CAF50;}
-        .css {width: 70%; background-color: #2196F3;}
-        .js {width: 60%; background-color: #f44336;}
-          .container{
-            text-align: center;
-          }
-        </style>
-      
-          </article>
-      <!---------Testemonials----------------->
-      <style>
-        @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
-figure.snip1192 {
-  font-family: 'Raleway', Arial, sans-serif;
-  position: relative;
-  float: left;
-  overflow: hidden;
-  margin: 10px 1%;
-  min-width: 220px;
-  max-width: 310px;
-  width: 100%;
-  color: #333;
-  text-align: left;
-  box-shadow: none ;
-}
-figure.snip1192 * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-figure.snip1192 img {
-  max-width: 100%;
-  height: 120px;
-  width: 120px;
-  border-radius: 50%;
-  margin-bottom: 15px;
-  display: inline-block;
-  z-index: 1;
-  position: relative;
-}
-figure.snip1192 blockquote {
-  margin: 0;
-  display: block;
-  border-radius: 8px;
-  position: relative;
-  background-color: #fafafa;
-  padding: 30px 50px 65px 50px;
-  font-size: 0.8em;
-  font-weight: 500;
-  margin: 0 0 -50px;
-  line-height: 1.6em;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-  font-size: medium;
-}
-figure.snip1192 blockquote:before,
-figure.snip1192 blockquote:after {
-  font-family: 'FontAwesome';
-  content: "\201C";
-  position: absolute;
-  font-size: 50px;
-  opacity: 0.3;
-  font-style: normal;
-}
-figure.snip1192 blockquote:before {
-  top: 35px;
-  left: 20px;
-}
-figure.snip1192 blockquote:after {
-  content: "\201D";
-  right: 20px;
-  bottom: 35px;
-}
-figure.snip1192 .author {
-  margin: 0;
-  text-transform: uppercase;
-  text-align: center;
-  color: #ffffff;
-}
-figure.snip1192 .author h5 {
-  opacity: 0.8;
-  margin: 0;
-  font-weight: 800;
-}
-figure.snip1192 .author h5 span {
-  font-weight: 400;
-  text-transform: none;
-  display: block;
-}
-
-
-      </style>
-
-
-
-
-    
 </body>
 </html>
-<style>
-  </style>
-
-  <style>
-
-
-
-</style>
